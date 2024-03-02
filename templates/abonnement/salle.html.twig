@@ -1,0 +1,205 @@
+{% extends 'base.html.twig' %}
+
+{% block style %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">    
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/salle.css') }}">
+{% endblock %}
+
+{% block body %}
+    <body> 
+        <br>
+        <br>
+        <br>
+        <div class="menu-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="heading-title text-center">
+                            <h2>Salle de sport</h2>
+                            <p>Préparez-vous à transformer votre vie ! Assurez-vous une place privilégiée en optant dès maintenant pour votre abonnement à la salle de sport. Embarquez dans une aventure fitness inoubliable qui n'attend que vous avec enthousiasme</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="special-menu text-center">
+                            <div class="button-group filter-button-group">
+                                <button class="active" data-filter="*">All</button>
+                                <button data-filter=".drinks"><img src="{{ asset('images/ett1.png') }}" class="ab2"></button>
+                                <button data-filter=".lunch"><img src="{{ asset('images/ett2.png') }}"  class="ab2"></button>
+                                <button data-filter=".dinner"><img src="{{ asset('images/ett3.png') }}"  class="ab2"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add a search input -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label for="searchInput">Search Salle:</label>
+                            <input type="text" id="searchInput" class="form-control" placeholder="Enter salle name">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row special-list">
+                    <div class="col-lg-4 col-md-6 special-grid drinks">
+                        <div class="gallery-single fix">
+                            <img src="{{ asset('images/calif.jpg') }}"  alt="Image">
+                            <div class="why-text">
+                                <a href='https://www.california-gym.com/'>Californiagym</a>
+                                <p></p>
+                                <h5> 170TND</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 special-grid drinks">
+                        <div class="gallery-single fix">
+                            <img src="{{ asset('images/ola.png') }}"  alt="Image">
+                            <div class="why-text">
+                                <a>Olaypique gym</a>
+                                <p></p>
+                                <h5> 150TND</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 special-grid drinks">
+                        <div class="gallery-single fix">
+                            <img src="{{ asset('images/park.jpg') }}"  alt="Image">
+                            <div class="why-text">
+                                <a>Fitness park</a>
+                                <p></p>
+                                <h5> 120TND</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more salle items as needed -->
+                    <div class="col-lg-4 col-md-6 special-grid lunch">
+                        <div class="gallery-single fix">
+                            <img src="{{ asset('images/olym.png') }}"  alt="Image">
+                            <div class="why-text">
+                                <a>Olympique gym</a>
+                                <p></p>
+                                <h5>90DT</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 special-grid lunch">
+                        <div class="gallery-single fix">
+                            <img src="{{ asset('images/giga.jpg') }}" alt="Image">
+                            <div class="why-text">
+                                <a>Giga gym</a>
+                                <p></p>
+                                <h5>85DT</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 special-grid lunch">
+                        <div class="gallery-single fix">
+                            <img src="{{ asset('images/galax.png') }}" alt="Image">
+                            <div class="why-text">
+                                <a>Galaxy gym</a>
+                                <p></p>
+                                <h5>100DT</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more salle items as needed -->
+                    <div class="col-lg-4 col-md-6 special-grid dinner">
+                        <div class="gallery-single fix">
+                            <img src="{{ asset('images/body.webp') }}" alt="Image">
+                            <div class="why-text">
+                                <a>Body Fitness</a>
+                                <p></p>
+                                <h5> 75DT</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 special-grid dinner">
+                        <div class="gallery-single fix">
+                            <img src="{{ asset('images/mside.jpg') }}"  alt="Image">
+                            <div class="why-text">
+                                <a>Mside gum</a>
+                                <p></p>
+                                <h5>55DT</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 special-grid dinner">
+                        <div class="gallery-single fix">
+                            <img src="{{ asset('images/oxy.jpg') }}"  alt="Image">
+                            <div class="why-text">
+                                <a>Oxy gym</a>
+                                <p></p>
+                                <h5> 50DT</h5>
+                            </div>
+                        </div>
+                         <a  href="{{ path('app_abonnement_new') }}" >Abonner vous<img src="{{ asset('images/clique.jpg') }}" class="ab" alt="Image"></a>	
+                    </div>
+					<div>
+               
+			</div>
+            
+                </div>
+            </div>
+        </div>
+    </body>
+{% endblock %}
+  
+ 
+
+   
+   {% block script %}
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('js/popper.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{{ asset('js/jquery.superslides.min.js') }}"></script>
+    <script src="{{ asset('js/images-loded.min.js') }}"></script>
+    <script src="{{ asset('js/isotope.min.js') }}"></script>
+    <script src="{{ asset('js/baguetteBox.min.js') }}"></script>
+    <script src="{{ asset('js/form-validator.min.js') }}"></script>
+    <script src="{{ asset('js/contact-form-script.js') }}"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById('searchInput');
+            const galleryItems = document.querySelectorAll('.special-grid');
+
+            searchInput.addEventListener('input', function () {
+                const searchQuery = this.value.trim().toLowerCase();
+
+                galleryItems.forEach(item => {
+                    const itemName = item.querySelector('a').textContent.trim().toLowerCase();
+
+                    if (itemName.includes(searchQuery)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+    {% endblock %}
+
+
+
+	
